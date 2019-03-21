@@ -1,60 +1,68 @@
-*{
-	box-sizing: border-box;
+* {
+  box-sizing: border-box;
 }
 
-html, body{
-	height: 200%;
-	width:  100%;
-	font-family: Helvetica, Arial, sans-serif;
-	font-size: 100%;
-
+html, body {
+  height: 200%;
+  width: 100%;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 100%;
 }
 
-h1{
-	margin: 1rem 0;
+h1 {
+  margin: 1rem 0;
 }
 
-section{
-	background: lightgrey;
-	border-bottom: 1px solid #000;
-	min-height: 600px;
-	margin-top: 2rem;
-
+section {
+  background: lightgrey;
+  border-bottom: 1px solid #000;
+  min-height: 600px;
+  margin-top: 2rem;
+  position: relative;
 }
 
-.wrapper{
-	max-width: 600px;
-	margin: auto;
-
+.wrapper {
+  max-width: 600px;
+  margin: auto;
 }
 
-.row{
-	width: 100%;
-
+.row {
+  width: 100%;
 }
 
-.col{
-	width: 200px;
-	height: 200px;
+.col {
+  width: 200px;
+  height: 200px;
 }
 
-.electric-purple{
-	background: #C200FB;
-
+.electric-purple {
+  background: #C200FB;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -100px;
+  margin-top: -100px;
 }
 
-.raspberry{
-	background: #EC0868;
-	
+.raspberry {
+  background: #EC0868;
+  position: absolute;
+  right: 0;
 }
 
-.ferrari-red{
-	background: #FC2F00;
-	
-
+.ferrari-red {
+  background: #FC2F00;
+  position: absolute;
+  bottom: 0;
+  right: 0;
 }
 
-.black{
-	background: #000;
+.black {
+  background: #000;
+  position: absolute;
+  bottom: 0;
+  left: 0;
 }
-
+section:hover .electric-purple{left:50%;border-radius: 50%;background: yellow;opacity: 0;}
+section .electric-purple{transition: 0.4s all ease; 
+}
